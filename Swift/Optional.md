@@ -35,23 +35,23 @@ let name: Optional<String> = nil //정식표현
 <summary>switch문을 통해 optional 값을 확인할 수 있다.</summary>
 <div markdown="1">
     
-    ```swift
-    func checkOptionalValue(optionalValue: Any?) {
-        switch optionalValue {
-        case .none:
-            print("Optional value is nil")
-        case .some(let value):
-            print("Value is \(value)")
-        }
-        
+```swift
+func checkOptionalValue(optionalValue: Any?) {
+    switch optionalValue {
+    case .none:
+        print("Optional value is nil")
+    case .some(let value):
+        print("Value is \(value)")
     }
     
-    var name: String? = "Jiin"
-    checkOptionalValue(optionalValue: name) //Value is Jiin
-    
-    var none: String? = nil
-    checkOptionalValue(optionalValue: none) //Optional value is nil
-    ```
+}
+
+var name: String? = "Jiin"
+checkOptionalValue(optionalValue: name) //Value is Jiin
+
+var none: String? = nil
+checkOptionalValue(optionalValue: none) //Optional value is nil
+```
     
 </details>
   

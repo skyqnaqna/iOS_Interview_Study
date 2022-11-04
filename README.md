@@ -14,4 +14,4 @@
 ### 디자인패턴
 | 질문                                                                          |                          답변                          | 작성자 |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
-|SOLID 원칙 5가지에 대해 설명하시오.|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/SOLID.md)|수빈|
+|SOLID 원칙 5가지에 대해 설명하시오.|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/SOLID.md)|수빈|

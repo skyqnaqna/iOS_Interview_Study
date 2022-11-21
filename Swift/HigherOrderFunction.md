@@ -47,7 +47,7 @@ let intNums2 = strNums.map({ Int($0)! })
 let intNums3 = strNums.map { Int($0)! }
 ```
 
-- `Sequence`에 정의된 Map
+- [`Sequence`에 정의된 Map](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/Sequence.swift#L653)
 
 ```swift
 @inlinable
@@ -72,7 +72,7 @@ let intNums3 = strNums.map { Int($0)! }
   }
 ```
 
-- `Collection`에 정의된 Map
+- [`Collection`에 정의된 Map](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/Collection.swift#L1174)
 
 ```swift
 @inlinable
@@ -115,7 +115,7 @@ print(mapped) // [Optional(1), Optional(2), nil, Optional(4), Optional(5)]
 print(compactMapped) // [1, 2, 4, 5]
 ```
 
-- `SequenceAlgorithms`에 정의된 **CompactMap**
+- [`SequenceAlgorithms`에 정의된 **CompactMap**](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/SequenceAlgorithms.swift#L768)
 
 ```swift
 @inlinable // protocol-only
@@ -173,7 +173,7 @@ print(arr2) // ["a", "b", "c", "d", "e", "f"]
     
 
 
-- `SequenceAlgorithms`에 정의된 **FlatMap**
+- [`SequenceAlgorithms`에 정의된 **FlatMap**](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/SequenceAlgorithms.swift#L729)
 
 ```swift
 @inlinable
@@ -246,7 +246,7 @@ let oddNums2 = intNums.filter({ $0 % 2 != 0 })
 let oddNums3 = intNums.filter { $0 % 2 != 0 }
 ```
 
-- `Sequence`에 정의된 Filter
+- [`Sequence`에 정의된 Filter](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/Sequence.swift#L693)
 
 ```swift
 @inlinable
@@ -305,7 +305,7 @@ let sum3 = intNums.reduce(0) { $0 + $1 }
 let sum4 = intNums.reduce(0, +)
 ```
 
-- `SequenceAlgorithms`에 정의된 Reduce
+- [`SequenceAlgorithms`에 정의된 Reduce](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/SequenceAlgorithms.swift#L582)
 
 ```swift
 @inlinable
@@ -369,7 +369,7 @@ strNums.forEach { num in
 strNums.forEach { print($0) }
 ```
 
-- `Sequence` 에 정의된 ForEach
+- [`Sequence` 에 정의된 ForEach](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/Sequence.swift#L756)
 
 ```swift
 @_semantics("sequence.forEach")
@@ -401,7 +401,7 @@ strNums.sort(by: >)
 print(strNums) // ["5", "4", "3", "2", "1"]
 ```
 
-- **Sort**에 정의된 **Sort**와 **Sorted**
+- [**Sort**에 정의된 **Sort**와 **Sorted**](https://github.com/apple/swift/blob/103b4a89c225915214d36ba350900132ef335161/stdlib/public/core/Sort.swift#L14)
 
 ```swift
 @inlinable

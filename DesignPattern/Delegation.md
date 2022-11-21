@@ -35,7 +35,7 @@
     
 2. 클래스를 분리하거나 **재사용 가능한 컴포넌트**를 만들기 위해 사용한다.
 
-<img src=https://user-images.githubusercontent.com/31722496/203113243-d19290df-109d-4055-a6c5-aea2e4ae5485.png>
+<img src=https://user-images.githubusercontent.com/31722496/203113243-d19290df-109d-4055-a6c5-aea2e4ae5485.png width=60%>
 
 - 만약 우리가 `UITableView`를 직접 만들었다고 가정해보자.
 - `A`객체와 `B`객체는 `UITableView` 를 사용하기 위해 각 객체가 `UITableView` 객체를 갖고있는 상태다.
@@ -44,12 +44,12 @@
     - 따라서 `UITableView`는 `A`타입 객체인지 `B` 타입 객체체인지에 따라 처리할 작업을 분류해야 한다.
     - 즉, `UITableView`가 `A`와 `B`의 존재를 알아야한다는 것이다.
         
-		<img src=https://user-images.githubusercontent.com/31722496/203113211-4af07f9e-0f03-400d-8872-ea7b6083ddd3.png>
+		<img src=https://user-images.githubusercontent.com/31722496/203113211-4af07f9e-0f03-400d-8872-ea7b6083ddd3.png width=60%>
         
     - `UITableView`를 사용하는 객체가 많아질수록 점점 방대해지고 복잡해지는 문제가 생길 것이다.
     - 이런 문제를 해결하기 위해 **Delegation Pattern**을 사용한다.
 
-<img src=https://user-images.githubusercontent.com/31722496/203113219-c49e82ae-111f-47e7-a09c-df325bc2ea16.png>
+<img src=https://user-images.githubusercontent.com/31722496/203113219-c49e82ae-111f-47e7-a09c-df325bc2ea16.png width=60%>
 
 - Delegation Pattern을 사용하면 `UITableView`가 `A`와 `B`를 몰라도 문제가 없다. → 결합도 낮춤
 - 대리자(delegate 프로퍼티)에게 할 일을 넘기면 되기 때문이다.
@@ -120,11 +120,11 @@
     
     1. a가 b만 가리키고 있음
     
-	<img src=https://user-images.githubusercontent.com/31722496/203113236-cac93758-d4aa-4bee-be35-68cc7ad388e2.png>
+	<img src=https://user-images.githubusercontent.com/31722496/203113236-cac93758-d4aa-4bee-be35-68cc7ad388e2.png width=60%>
     
     2. b가 a를 가리키게 되면서 자기 자신을 강한 참조하게 됨 → Retain Cycle
     
-	<img src=https://user-images.githubusercontent.com/31722496/203113240-54ac0557-5a5c-4490-95f7-2795530bf740.png>
+	<img src=https://user-images.githubusercontent.com/31722496/203113240-54ac0557-5a5c-4490-95f7-2795530bf740.png width=60%>
     
 - `weak` 또는 `unowned`를 잘 사용하자!
 

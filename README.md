@@ -4,7 +4,8 @@
 | 질문                                                                          |                          답변                          | 작성자 |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
 |Optional에 대해 아는대로 모두 설명하세요.|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/Swift/Optional.md)|지인|
-|POP에 대해 설명하시오|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/POP.md)|수빈|
+|POP에 대해 설명하시오.|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/POP.md)|수빈|
+|고차함수에 대해 설명하시오.|[221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/HigherOrderFunction.md)|수빈|
 
 ### 운영체제
 | 질문                                                                          |                          답변                          | 작성자 |
@@ -17,9 +18,10 @@
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
 |SOLID 원칙 5가지에 대해 설명하시오.|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/SOLID.md)|수빈|
 |MVC와 MVVM 차이는 무엇인가요?|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/MVC_MVVM.md)|지인|
+|Delegation 패턴은 무엇인가요?|[221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/Delegation.md)|수빈|
 
 ### 자료구조
 
 | 질문                                                                          |                          답변                          | 작성자 |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
-|트리에 대해 설명하시오|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Tree.md)|수빈|
+|트리에 대해 설명하시오.|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Tree.md)|수빈|

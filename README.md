@@ -7,6 +7,11 @@
 |POP에 대해 설명하시오.|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/POP.md)|수빈|
 |고차함수에 대해 설명하시오.|[221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/HigherOrderFunction.md)|수빈|
 
+### iOS
+| 질문                                                                          |                          답변                          | 작성자 |
+| :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
+| URLSession에 대해 설명하시오. | [221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/iOS/URLSession.md) | 지인 |
+| GCD API 동작 방식과 필요성에 대해 설명하시오. | [221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/iOS/GCD.md) | 지인 |
 ### 운영체제
 | 질문                                                                          |                          답변                          | 작성자 |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |

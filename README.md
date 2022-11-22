@@ -34,5 +34,6 @@
 
 ### 네트워크
 | 질문                                                                          |                          답변                          | 작성자 |
-| HTTP 특징은 무엇인가요? | [221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/Network/HTTP.md)|지인|
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
+| HTTP 특징은 무엇인가요? | [221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/Network/HTTP.md)|지인|
+

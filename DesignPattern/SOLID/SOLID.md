@@ -7,22 +7,22 @@ SOLID 원칙을 적용하면 결합도를 낮추고 응집도를 높이면서, �
 
 ## 내용
 
-- [Single Responsibility Principle 단일 책임 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/SRP.md)
+- [Single Responsibility Principle 단일 책임 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/SRP.md)
 	- 한 클래스는 하나의 기능만 가져야 한다
 
-- [Open/Colsed Principle 개방-폐쇄 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/OCP.md)
+- [Open/Colsed Principle 개방-폐쇄 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/OCP.md)
 
 	- 코드를 변경하지 않고 확장할 수 있어야 한다
 
-- [Liskov Substitution Principle 리스코프 치환 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/LSP.md)
+- [Liskov Substitution Principle 리스코프 치환 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/LSP.md)
 
 	- 자식 타입 클래스는 언제나 부모 타입 클래스로 바꿀 수 있어야 한다
 
-- [Interface Segregation Principle 인터페이스 분리 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/ISP.md)
+- [Interface Segregation Principle 인터페이스 분리 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/ISP.md)
 
 	- 하나의 범용 인터페이스보다 여러 개의 구체적인 인터페이스가 낫다
 
-- [Dependency Inversion Principle 의존관계 역전 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/DIP.md)
+- [Dependency Inversion Principle 의존관계 역전 원칙](https://github.com/skyqnaqna/iOS_Interview_Study/blob/main/DesignPattern/SOLID/DIP.md)
 
 	- 상위 모듈이 하위 모듈에 의존해서는 안되며, 둘 다 추상화에 의존해야 한다.
 

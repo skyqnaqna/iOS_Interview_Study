@@ -108,12 +108,18 @@ private lazy var session: URLSession = {
 }()
 ```
 
-1. dataTask를 시작시키고, 처리하기 위해 delegate 콜백을 활용해야 한다.
-    1. `urlSession(_:dataTask:didReceive:completionHandler:)` : response가 성공적인 HTTP 상태 코드를 가지고 있는지 검증하고 MIME 타입이 text/html인지 text/plain인지 확인한다. 만약 두 경우 모두 아니라면 task는 취소되며, 정상인 경우는 진행된다.
-    2. `urlSession(_:dataTask:didReceive)` : task를 통해 받은 각 Data 인스턴스를 receivedData
+2. dataTask를 시작시키고, 처리하기 위해 delegate 콜백을 활용해야 한다.
+    - `urlSession(_:dataTask:didReceive:completionHandler:)` : response가 성공적인 HTTP 상태 코드를 가지고 있는지 검증하고 MIME 타입이 text/html인지 text/plain인지 확인한다. 만약 두 경우 모두 아니라면 task는 취소되며, 정상인 경우는 진행된다.
+    - `urlSession(_:dataTask:didReceive)` : task를 통해 받은 각 Data 인스턴스를 receivedData
     라고 불리는 버퍼에 저장한다.
-    3. `urlSession(_:task:didCompleteWithError:)` : 전송 오류가 발생했는지 확인 후 오류가 없다면 receivedData 버퍼를 원하는 모델 타입에 맞게 디코딩해준다
+    - `urlSession(_:task:didCompleteWithError:)` : 전송 오류가 발생했는지 확인 후 오류가 없다면 receivedData 버퍼를 원하는 모델 타입에 맞게 디코딩해준다
 
+<details>
+<summary>공식문서 Delegate 예시코드 </summary>
+<div markdown="1"> 
+
+<br>
+    
 ```swift
 var receivedData: Data?
 
@@ -155,7 +161,10 @@ func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithErro
     }
 }
 ```
-
+</details>
+	
+	
+	
 ## 질문
 
 ### Alamofire나 Moya 같은 것과 어떤 연관이 있나요?

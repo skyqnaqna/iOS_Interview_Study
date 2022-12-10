@@ -12,7 +12,7 @@
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
 | URLSession에 대해 설명하시오. | [221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/iOS/URLSession.md) | 지인 |
 | GCD API 동작 방식과 필요성에 대해 설명하시오. | [221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/iOS/GCD.md) | 지인 |
-| ViewLifeCycle의 동작과 AppState에 대해 설명하시오. | [221124](https://github.com/skyqnaqna/iOS_Interview_Study/commit/1248a842fd6eaca2c25c0e1e53cf0fe271ae2154) | 지인 |
+| ViewLifeCycle의 동작과 AppState에 대해 설명하시오. | [221124](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/iOS/ViewLifeCycle_AppState.md) | 지인 |
 ### 운영체제
 | 질문                                                                          |                          답변                          | 작성자 |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |

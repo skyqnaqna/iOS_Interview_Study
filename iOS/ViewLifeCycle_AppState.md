@@ -50,7 +50,7 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 </aside>
 
 ### ****View-related Notifications (=View LifeCycle)****
-![Untitled](https://user-images.githubusercontent.com/37897873/206861575-82285daa-eee9-4c4d-822f-79dc80bebbe7.png)
+<img src="https://user-images.githubusercontent.com/37897873/206861575-82285daa-eee9-4c4d-822f-79dc80bebbe7.png" width=350>
 
 1. `loadView` :  뷰를 만드는 역할. 이 메서드를 직접 호출하면 안되고, 뷰의 초기화는 viewDidLoad에서 해야한다. 
 2. `viewDidLoad` : 뷰의 컨트롤러가 메모리에 로드 된 후(loadView에서 뷰를 만들고 메모리에 올린 후)에 호출되며, 뷰 로딩이 완료되었을 때 시스템에 의해 자동으로 호출되어서 주로 리소스 초기화하거나, 처음 한번만 실행하므로  초기 화면 구성할 때 사용해야한다.
@@ -60,8 +60,7 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 6. `ViewDidDisapper` : 뷰컨에 뷰가 제거되었음을 알린다.
 
 ### App State
-
-![appState](https://user-images.githubusercontent.com/37897873/206861592-4fa05268-8774-435f-bbac-b11d37a37d3d.png)
+<img src="https://user-images.githubusercontent.com/37897873/206861592-4fa05268-8774-435f-bbac-b11d37a37d3d.png" width=350>
 
 1. NotRunning : 실행되지 않았거나, 시스템에 의해 종료된 상태
 2. Inactive : 실행 중이지만 이벤트를 받고있지 않은 상태. 예를들어, 앱 실행 중 미리알림 또는 일정 얼럿이 화면에 덮여서 앱이 실질적으로 이벤트는 받지 못하는 상태등을 뜻합니다.
@@ -76,8 +75,8 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 앱의 상태가 변경되면 UIKit은 적절한 delegate object를 호출해서 알려준다.
 
 ### Scene-based life-cycle events
+<img src="https://user-images.githubusercontent.com/37897873/206861622-de7e4fef-def8-44f9-a9dd-ba2e289d3e8f.png" width=300>
 
-![Untitled 1](https://user-images.githubusercontent.com/37897873/206861622-de7e4fef-def8-44f9-a9dd-ba2e289d3e8f.png)
 
 
 `Scene`이란 기기에서 실행되는 앱 UI의 한 instance를 의미한다. 각각의 scene은 고유한 life-cycle이 있으므로, 다른 실행 상태에 있을 수 있다. (예를들어, A scene은 foreground B scene은 background로)
@@ -87,12 +86,11 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 - iOS 13 ~ 이후 : `UISceneDelegate` 를 사용하며 scene을 제공하므로 별도의 Scene life-cycle 이벤트를 제공
 - iOS 12 ~ 이전 : `UIApplicationDelegate` 를 사용하고, 그냥 life-cycle event에 응답
 
-![Untitled 2](https://user-images.githubusercontent.com/37897873/206861646-077c4d70-fb81-4ac7-95e3-02f2570f36f3.png)
+<img src="https://user-images.githubusercontent.com/37897873/206861646-077c4d70-fb81-4ac7-95e3-02f2570f36f3.png" width=350>
 
 
-- 자세한 동작 사진
-    
-![Untitled 3](https://user-images.githubusercontent.com/37897873/206861643-5f739b99-f3e1-4515-981a-43b69a1807f6.png)
+자세한 동작 사진
+<img src="https://user-images.githubusercontent.com/37897873/206861643-5f739b99-f3e1-4515-981a-43b69a1807f6.png" width=350>
     
 1. scene의 초기 UI를 구성하고 필요한 data를 로드한다.
 2. Foreground-Active : (우리가 짠) UI를 구성하고, 유저와 interact 하기위해 준비한다. [Preparing your UI to run in the foreground](https://developer.apple.com/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_foreground)
@@ -109,7 +107,8 @@ launch 이후, UI가 화면에 표시되는지 여부에 따라 앱을 inactive 
 foreground로 실행되면, 자동으로 앱을 활성화 상태로 전환한다.
 
 그 이후에는 앱이 종료될 때까지 active ↔ background 상태에서 변동된다.
-![Untitled 4](https://user-images.githubusercontent.com/37897873/206861676-169d8332-db26-4486-9d1b-059c44defa73.png)
+
+<img src="https://user-images.githubusercontent.com/37897873/206861676-169d8332-db26-4486-9d1b-059c44defa73.png" width=350>
 
 
 ### 정리
@@ -119,7 +118,7 @@ foreground로 실행되면, 자동으로 앱을 활성화 상태로 전환한다
         
         스토리보드는 window를 자동적으로 초기화해서 scene에 붙여주지만, 코드로 UI 짤 때는 이렇게 직접 연결해야한다.
         
-        <img width="932" alt="%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-24_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_11 30 48" src="https://user-images.githubusercontent.com/37897873/206861687-87108521-1e04-45a6-9990-c15d7e215736.png">
+        <img width="600" alt="%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-24_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_11 30 48" src="https://user-images.githubusercontent.com/37897873/206861687-87108521-1e04-45a6-9990-c15d7e215736.png">
 
         
     2. `func sceneWillEnterForeground` 

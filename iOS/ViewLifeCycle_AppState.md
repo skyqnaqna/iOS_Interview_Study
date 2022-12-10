@@ -50,7 +50,7 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 </aside>
 
 ### ****View-related Notifications (=View LifeCycle)****
-<img src="https://user-images.githubusercontent.com/37897873/206861575-82285daa-eee9-4c4d-822f-79dc80bebbe7.png" width=350>
+<img src="https://user-images.githubusercontent.com/37897873/206861575-82285daa-eee9-4c4d-822f-79dc80bebbe7.png" width=450>
 
 1. `loadView` :  뷰를 만드는 역할. 이 메서드를 직접 호출하면 안되고, 뷰의 초기화는 viewDidLoad에서 해야한다. 
 2. `viewDidLoad` : 뷰의 컨트롤러가 메모리에 로드 된 후(loadView에서 뷰를 만들고 메모리에 올린 후)에 호출되며, 뷰 로딩이 완료되었을 때 시스템에 의해 자동으로 호출되어서 주로 리소스 초기화하거나, 처음 한번만 실행하므로  초기 화면 구성할 때 사용해야한다.
@@ -60,7 +60,7 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 6. `ViewDidDisapper` : 뷰컨에 뷰가 제거되었음을 알린다.
 
 ### App State
-<img src="https://user-images.githubusercontent.com/37897873/206861592-4fa05268-8774-435f-bbac-b11d37a37d3d.png" width=350>
+<img src="https://user-images.githubusercontent.com/37897873/206861592-4fa05268-8774-435f-bbac-b11d37a37d3d.png" width=450>
 
 1. NotRunning : 실행되지 않았거나, 시스템에 의해 종료된 상태
 2. Inactive : 실행 중이지만 이벤트를 받고있지 않은 상태. 예를들어, 앱 실행 중 미리알림 또는 일정 얼럿이 화면에 덮여서 앱이 실질적으로 이벤트는 받지 못하는 상태등을 뜻합니다.
@@ -75,7 +75,7 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 앱의 상태가 변경되면 UIKit은 적절한 delegate object를 호출해서 알려준다.
 
 ### Scene-based life-cycle events
-<img src="https://user-images.githubusercontent.com/37897873/206861622-de7e4fef-def8-44f9-a9dd-ba2e289d3e8f.png" width=300>
+<img src="https://user-images.githubusercontent.com/37897873/206861622-de7e4fef-def8-44f9-a9dd-ba2e289d3e8f.png" width=400>
 
 
 
@@ -84,13 +84,11 @@ ViewController는 뷰를 느리게 로드하는데, 뷰 프로퍼티에 처음 �
 `Scene`은 한 Scene 세션에 대한 Configuration이 AppDelegate에서 설정되고, 이를 기반으로 SceneDelegate의 willConnectToSession에서 UI를 만들어낸다.
 
 - iOS 13 ~ 이후 : `UISceneDelegate` 를 사용하며 scene을 제공하므로 별도의 Scene life-cycle 이벤트를 제공
-- iOS 12 ~ 이전 : `UIApplicationDelegate` 를 사용하고, 그냥 life-cycle event에 응답
+- iOS 12 ~ 이전 : `UIApplicationDelegate` 를 사용하고, 그냥 life-cycle event에 응답<br>
 
-<img src="https://user-images.githubusercontent.com/37897873/206861646-077c4d70-fb81-4ac7-95e3-02f2570f36f3.png" width=350>
-
-
-자세한 동작 사진
-<img src="https://user-images.githubusercontent.com/37897873/206861643-5f739b99-f3e1-4515-981a-43b69a1807f6.png" width=350>
+|동작흐름|디테일|
+|---|---|
+|<img src="https://user-images.githubusercontent.com/37897873/206861646-077c4d70-fb81-4ac7-95e3-02f2570f36f3.png" width=450>| <img src="https://user-images.githubusercontent.com/37897873/206861643-5f739b99-f3e1-4515-981a-43b69a1807f6.png" width=550> |
     
 1. scene의 초기 UI를 구성하고 필요한 data를 로드한다.
 2. Foreground-Active : (우리가 짠) UI를 구성하고, 유저와 interact 하기위해 준비한다. [Preparing your UI to run in the foreground](https://developer.apple.com/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_foreground)

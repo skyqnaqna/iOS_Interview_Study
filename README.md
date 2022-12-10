@@ -6,7 +6,7 @@
 |Optional에 대해 아는대로 모두 설명하세요.|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/Swift/Optional.md)|지인|
 |POP에 대해 설명하시오.|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/POP.md)|수빈|
 |고차함수에 대해 설명하시오.|[221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/HigherOrderFunction.md)|수빈|
-
+|Closuer에 대해 설명하시오.|[221204](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/Swift/Closuer.md)|지인|
 ### iOS
 | 질문                                                                          |                          답변                          | 작성자 |
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |

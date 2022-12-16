@@ -112,7 +112,7 @@ foreground로 실행되면, 자동으로 앱을 활성화 상태로 전환한다
 ### 정리
 
 - 앱이 처음 실행될 때
-    1. `**func** scene()` :  UIWindow의 scene을 선택적으로 구성하고, 제공된 window에 scene을 연결한다.
+    1. `func scene()` :  UIWindow의 scene을 선택적으로 구성하고, 제공된 window에 scene을 연결한다.
         
         스토리보드는 window를 자동적으로 초기화해서 scene에 붙여주지만, 코드로 UI 짤 때는 이렇게 직접 연결해야한다.
         
@@ -125,13 +125,13 @@ foreground로 실행되면, 자동으로 앱을 활성화 상태로 전환한다
 - 다시 active 상태로 바뀌면 : `func sceneDidBecomeActive`
 - 앱이 아예 꺼지면 : `func sceneDidDisconnect`
 
-### ****Respond to other significant events****
+### Respond to other significant events
 
 추가적으로 앱은 밑의 처리들을 해야하는데, UIApplicationDelegate 객체를 사용해서 처리해야 한다.
 
 - 메모리 warning : 앱이 메모리를 너무 많이쓰면 메모리 사용량을 줄인다. [Responding to memory warnings](https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle/responding_to_memory_warnings)
 - Protected data를 available/unavailable : 유저가 기기를 잠그거나 잠금해제 될 때 수신된다.
-- Handoff tasks : `[NSUserActivity](https://developer.apple.com/documentation/foundation/nsuseractivity)` 객체를 사용해서 받을 수 있는데, handoff란 Ipad에서 작업하다가 Mac으로 바로 전환해서 이어서 작업할 수 있는 기능 ( [참고](https://support.apple.com/ko-kr/HT209455) )
+- Handoff tasks : `[NSUserActivity](https://developer.apple.com/documentation/foundation/nsuseractivity)` 객체를 사용해서 받을 수 있는데, handoff란 Ipad에서 작업하다가 Mac으로 바로 전환해서 이어서 작업할 수 있는 기능 [참고](https://support.apple.com/ko-kr/HT209455)
 - Time changes : 이동통신사가 시간 업데이트를 보내는 경우와 같이 여러 가지 다른 시간 변경에 대해 수신
 - Open URLs : 앱에서 리소스를 열어야 할 때 수신
 

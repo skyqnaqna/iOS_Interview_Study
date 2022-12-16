@@ -10,8 +10,8 @@
 - 다른언어의 람다와 비슷
 - 클로저 방식 : 기본 클로저 표현 / 후행 클로저 표현
 - 함수는 클로저의 한 형태
-    - Named Closuer : func 키워드 붙인함수 → 일반적으로 함수라고 부르지만 클로저의 일종
-    - Unnamed Closuer : 익명 함수 (이름을 붙이지 않고 사용) → 보통 클로저로 불림
+    - Named Closure : func 키워드 붙인함수 → 일반적으로 함수라고 부르지만 클로저의 일종
+    - Unnamed Closure : 익명 함수 (이름을 붙이지 않고 사용) → 보통 클로저로 불림
 - 클로저는 참조타입, Heap에 존재
 
 ### 클로저의 3가지 형태
@@ -171,11 +171,11 @@ let closure = {
 
 ## 클로저 캡쳐 리스트
 
-일반적인 Closuer는 참조타입이므로 Reference Type을 캡쳐하지만, Value Type으로 캡쳐하고 싶다면?
+일반적인 Closure는 참조타입이므로 Reference Type을 캡쳐하지만, Value Type으로 캡쳐하고 싶다면?
 
 Value Capture 하고 싶은 변수를 리스트로 명시해서 사용할 수 있다. 
 
-- [ 캡쳐 리스트 ] in : `let closuer = { [s1, s2] in`
+- [ 캡쳐 리스트 ] in : `let closure = { [s1, s2] in`
 
 ```swift
 func doSomething() {
@@ -235,8 +235,8 @@ func delayFunction(completion: () -> ()) {
 
 ```swift
 //비탈출
-func nonescape(closuer: () -> Void) {
-		closuer()
+func nonescape(closure: () -> Void) {
+		closure()
 }
 
 //탈출
@@ -260,8 +260,8 @@ let instance = SomeClass()
 instance.test1()
 print("test1", instance.x)
 
-let returnClosuer: () -> () = instance.test2()
-returnClosuer()
+let returnClosure: () -> () = instance.test2()
+returnClosure()
 print("test2", instance.x)
 
 //결과
@@ -279,12 +279,12 @@ print("test2", instance.x)
 2. 객체의 인자로 넘길 수 있어야 한다.
 3. 객체의 리턴값으로 리턴 할수 있어야 한다.
 
-### @autoclosuer는 무엇인가요?
+### @autoclosure는 무엇인가요?
 
 > 파라미터로 전달된 일반구문과 함수를 **클로저로 래핑(Wrapping)** 한 것이다.
 > 
 
-`@autoclosuer` 키워드를 붙이면 실제론 클로저를 전달받지 않지만, 클로저처럼 사용가능하다.
+`@autoclosure` 키워드를 붙이면 실제론 클로저를 전달받지 않지만, 클로저처럼 사용가능하다.
 
 바로 실행되어야 할 구문이 **지연되어 실행**한다는 특징이 있다. 클로저가 호출되어야만 비로소 실행됨
 
@@ -314,9 +314,9 @@ names
 2. 결과인 String이 updatesNames() 함수의 인자로 전달되려 하면 
 3. `() → String` ≠ `String` 타입이 맞지 않아 오류가 발생된다. 
 
-그래서 @autoclosuer로 구문을 클로저로 감싸고 지연되어 실행되는 것이다. 
+그래서 @autoclosure로 구문을 클로저로 감싸고 지연되어 실행되는 것이다. 
 
-- `assert` 함수도 @autoclosuer 형태로 구현되어 있다.
+- `assert` 함수도 @autoclosure 형태로 구현되어 있다.
     
     ```swift
     func assert(condition: @autoclosure () -> Bool, 

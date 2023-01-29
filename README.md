@@ -14,7 +14,7 @@
 |Closure에 대해 설명하시오.|[221204](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/Swift/Closure.md)|지인|
 |Collection과 Sequence|[221211](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/Collection_Sequence.md)|수빈|
 |접근제어자가 무엇이며 왜 필요한가요?|[221220](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/Swift/AccessControl.md)|수빈|
-
+|Copy on Write에 대해 설명하시오.|[221220](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/Swift/CopyOnWrite.md)|지인|
 
 ### iOS
 | 질문                                                                          |                          답변                          | 작성자 |
@@ -36,7 +36,7 @@
 | :---------------------------------------------------------------------------- | :----------------------------------------------------: | :----: |
 |프로세스와 쓰레드의 차이에 대해 설명하시오.|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/ProcessThread.md)|지인|
 |동시성/병렬/동기/비동기 각각의 차이는 무엇일까요?|[221102](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Concurrency_Parallelism_(A)Sync.md)|수빈|
-
+|세마포어와 뮤텍스의 차이는 무엇인가요?|[230112](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/Semaphore_Mutex.md)|지인|
 
 ### 디자인패턴
 | 질문                                                                          |                          답변                          | 작성자 |
@@ -45,6 +45,7 @@
 |MVC와 MVVM 차이는 무엇인가요?|[221110](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/MVC_MVVM.md)|지인|
 |Delegation 패턴은 무엇인가요?|[221117](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/Delegation.md)|수빈|
 |디자인패턴과 아키텍처(패턴)의 차이점?|[221227](https://github.com/skyqnaqna/iOS_Interview_Study/blob/subin/DesignPattern/DesignPattern_Architectrue.md)|수빈|
+|Clean Architecture에 대해 설명하시오.|[221227](https://github.com/skyqnaqna/iOS_Interview_Study/blob/jiin/DesignPattern/CleanArchitecutre.md)|지인|
 
 ### 자료구조
 
